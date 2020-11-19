@@ -10,8 +10,10 @@ export class AppComponent {
  lat:string = '';
  lng:string= '';
  country: string = '';
- city: string = ''
- location: Object;
+ city: string = '';
+ continente: string='';
+ region: string='';
+ codigo_postal: number=0;
  constructor(private map: MapsService){}
 
  ngOnInit(){
@@ -20,7 +22,10 @@ export class AppComponent {
      this.lat = data.latitude;
      this.lng = data.longitude;
      this.country = data.country_name;
-     this.city = data.region_name;
+     this.city = data.city;
+     this.region = data.region_name;
+     this.continente = data.continent_name;
+     this.codigo_postal = data.zip;
    })
  }
 }

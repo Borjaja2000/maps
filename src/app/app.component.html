@@ -1,14 +1,25 @@
-<h1>{{country}}, {{city}}</h1>
+<br/>
+<h1 class="h1" align="center">Api Localizacion por IP</h1>
+<br/>
+<table width="300px" border="1px" class="table table-bordered table-info" >
+  <thead>
+    <th>País</th><td>{{country}}</td>
+    <tr></tr>
+    <th>Ciudad</th><td>{{city}}</td>
+    <tr></tr>
+    <th>Codigo Postal</th><td>{{codigo_postal}}</td>
+    <tr></tr>
+    <th>Región</th><td>{{region}}</td>
+    <tr></tr>
+    <th>Continente</th><td>{{continente}}</td>
+    <tr></tr>
+    <th>Latitud</th><td>{{lat}}</td>
+    <tr></tr>
+    <th>Longitud</th><td>{{lng}}</td>
+  </thead>
+</table>
+<br/>
 <agm-map [latitude]="lat" [longitude]="lng">
   <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
 </agm-map>
-
-<table border="1px">
-  
-  <thead>
-    <th>País</th><th>Ciudad</th><th>Codigo Postal</th><th>Region</th><th>Capital País</th><th>Continente</th><th>Latitud</th><th>Longitud</th>
-  </thead>
-  <tbody>
-    <td>España</td><td>Madrid</td><td>28232</td><td>Madrid</td><td>Madrid</td><td>Europa</td><td>40.42618179321289</td><td>-3.6851398944854736</td>
-  </tbody>
-</table>
+<br/>
